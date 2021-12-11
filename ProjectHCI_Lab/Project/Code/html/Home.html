@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Asset/Home/logo.png" type="image/x-icon">
+    <title>Welcome to Frawsalla </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Asset/Home/logo.png" type="image/x-icon">  
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+    <link rel="stylesheet" href="../css/character.css">
+    <link rel="stylesheet" href="../html/event.html">
+    <link rel="stylesheet" href="../html/screenshot.html">
+    <link rel="stylesheet" href="../html/Register.html">
+    <!-- <link rel="stylesheet" href="../css/HomePage.css"> -->
+
+   
+
+    <!-- JQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <!-- <script src="../js/slider.js"></script> -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="../js/HomePage.js"></script>
+
+    <body>
+
+    
+        <header class="header" id="header"> 
+            <div class="header-toggle" onclick="toggleNavbar();">
+                <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                    <rect width="100" height="10" />
+                    <rect y="30" width="100" height="10" />
+                    <rect y="60" width="100" height="10" />
+                </svg>
+            </div>   
+    
+            <div id="header-logo-container">
+                <div>
+                    <img id="header-logo" src="../Asset/Home/logo.png" alt="Logotype">
+                </div>
+            </div>
+    
+            <div id="header-nav">
+                <div class="navigation">
+                    <div class="nav-item">
+                        <a href="home.html">HOME</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="event.html"> EVENT</a>
+                    </div>
+                    <div class="dropdown nav-item">
+                        <a>GAME INFO</a>
+    
+                        <div class="dropdown-menu">
+                            <a href="character.html" class="dropdown-item">CHARACTER</a>
+                            <a href="screenshot.html" class="dropdown-item">SCREENSHOT</a>
+                        </div>
+                    </div> 
+                </div>
+        
+                <div id="header-register">
+                    <div>
+                        <a href="../html/Register.html" class="RegisterButton"> PLAY NOW</a>
+                    </div>
+                </div> 
+            </div>
+        </header>
+
+        
+
+        <div class="content">
+
+            <div class="slideshow">
+                <div class="slideshowbody">
+                  
+                    <div class="slideshowcontent">
+            
+                        <div class="prevNextButton">
+                            <button class="button" id="prevBtn">
+                                <img src="../Asset/Home/left-arrow.png">
+                            </button> 
+                        </div>
+            
+                        <div class="slideShow">
+                            <div class="slideshowcontainer">
+                                <div class="slide">
+                                    <div class="imgslideshow">
+                                      <img src="../Asset/Home/slider1.jpg">
+                                    </div>
+                                </div>
+            
+                                <div class="slide">
+                                    <div class="imgslideshow">
+                                     <img src="../Asset/Home/slider2.jpg">
+                                    </div>
+                                </div>
+            
+                                <div class="slide">
+                                    <div class="imgslideshow">
+                                        <img src="../Asset/Home/slider3.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                       
+                        </div>
+            
+                        <div class="prevNextButton">
+                            <button class="button" id="nextBtn">
+                                <img src="../Asset/Home/right-arrow.png">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           
+            <div class = "upper-content">
+
+                <div class = "picture-body">
+                    <div class="Pictures-content1">
+                        <img src ="../Asset/Home/Home1.jpg" height = "250px" width="450px";>
+                    </div>
+                </div>
+
+                    <div class = "text-body">
+                        <div class="text-title1">
+                            <h2>PLAY HOW YOU WANT<br>ONLINE – OFFLINE<br>CASUAL – COMPETITIVE</h2>
+                        </div>
+
+                        <div class="text-content1">
+                            <p>
+                                Play locally with friends, fight in chaotic Free-For-All matches online and offline, 
+                                team up for 2v2 battles, or climb the Ranked ladder to Platinum and beyond. There’s a little something for
+                                everyone.
+                            </p>
+                            <p>
+                                If you’re looking to unwind with friends, or if you’re aiming to carve your name into the
+                                pillars of the Frawlsalla Power Rankings, you can play Frawlsalla however and whenever you want.
+                            </p>
+                        </div>
+                    </div>
+            </div>
+                
+            <div class = "mid-content">
+                <div class = "text-body">
+                    <div class="text-title2">
+                        <h2>CHOOSE A LEGEND<br>BECOME A LEGEND</h2>
+                    </div>
+                        
+                        <div class="text-content2">
+                            <p>
+                                Over 40 Legends to chose from, each with unique movesets, signature abilities, stats, weapon
+                                combinations and flair to suit your personal playstyle. Master one, or learn them all.
+                            </p>
+                        </div>
+                </div>
+            
+                <div class = "Picture-body">
+                    <div class = "Pictures-content2">
+                        <img src ="../Asset/Home/Home2.jpg" height = "250px" width="450px";>
+                    </div>
+                </div>
+            </div> 
+
+
+        
+            <div class = "lower-content">
+                <div class = "picture-content3">
+                    <img src ="../Asset/Home/Screenshot (646).png" height = "350px" width="500px";>
+                </div>
+            
+            </div>
+
+        </div> 
+
+        <div class="footer">
+
+            <div class="copyright">
+                <p>© 2021 Frawlsalla, All Rights Reserved.</p>
+            </div>
+    
+            <div class="icons">
+                <a href="https://www.instagram.com/brawlhalla/" target="_blank"><img id="img-instagram"
+                        src="../Asset/headerfooter/instagram.png"></a>
+                <a href="https://twitter.com/Brawlhalla" target="_blank"><img id="img-twitter"
+                            src="../Asset/headerfooter/twitter.png"></a>
+                <a href="https://www.facebook.com/Brawlhalla/" target="_blank"><img id="img-facebook"
+                        src="../Asset/headerfooter/facebook.png"></a>
+                
+            </div>
+    
+        </div>
+        
+        
+
+    </body>

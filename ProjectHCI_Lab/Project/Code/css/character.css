@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "Open Sans Regular";
+    src: 
+    url("../Asset/Home/FreeSans.ttf") format ("opentype");
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    font-family: OpenSans-Regular;
+    font-weight: 550;
+    font-size: 35px;
+    padding-bottom: 2%;
+    padding-top: 10%;
+}
+
+.choose{
+    
+    display:flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
+.charimage img{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+}
+
+.panel1{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    border-style: outset;
+    border-color: lightskyblue;
+    border-width: 10px;
+    border-radius: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.charimage{
+    display: flex;
+    justify-content: center;
+}
+
+.chartext{
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding-top: 7%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    background-color: lightskyblue;
+    border-color: white;
+    border-width: 5px;
+    border-style: groove;
+    border-radius: 30%;
+}
+
+.panel2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.panel3{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    border-style: outset;
+    border-color: lightskyblue;
+    border-width: 10px;
+    border-radius: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#charimage1{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/GnashCard.png');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage1:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Gnashtransform.png');
+}
+
+#charimage2{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/ScarletCard.png');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage2:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Scarlettransform.png');
+}
+
+#charimage3{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/thorcard.jpg');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage3:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Thortransform.png');
+}
+
+#charimage4{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/SirRolandCard.png');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage4:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Sir-Rolandtransform.png');
+}
+
+#charimage5{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/UlgrimCard.jpg');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage5:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Ulgrimtransform.png');
+}
+
+#charimage6{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/jiro.png');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage6:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/jirotransform.png');
+}
+
+#charimage7{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/LegendSTATCard_Volkov-1.jpg');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage7:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/volkovtransform.jpg');
+}
+
+#charimage8{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/ragnircard.jpg');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage8:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Ragnirtransform.png');
+}
+
+#charimage9{
+    width: 200px; height: 300px;
+    border-radius: 15%;
+    background-image: url('../Asset/character/mordex_card.jpg');
+    background-size: 100%;
+    transition: 1s;
+}
+
+#charimage9:hover{
+    transition: 1s;
+    background-image: url('../Asset/character/Mordextransform.png');
+}
+
+.footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.footer .icons img {
+    width: 24px;
+    transition: 0.2s;
+}
+
+.footer .icons img:hover {
+    opacity: 1;
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        font-size: 14pt;
+        height: 70px;
+    }
+
+    .header-toggle {
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        display: flex;
+    }
+
+    #header-nav {
+        background-color: #282a35;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+
+    #header-logo-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-logo {
+        height: 65px;
+    }
+
+    .dropdown:active .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dropdown-item {
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+
+    #header-register {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        display: flex;
+    }
+    .content {
+        margin-top: 30%;
+    }
+
+    .content .upper-content{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .content .mid-content{
+        flex-direction: column;
+        align-items: center;
+    }

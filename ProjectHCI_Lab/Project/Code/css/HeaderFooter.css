@@ -1,0 +1,273 @@
+@font-face {
+    font-family: Helvetica;
+    src: url(../Asset/FreeSans.ttf);
+} 
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 75px;
+    box-shadow: 0px 5px 5px grey;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    display: flex;
+    font-size: 16pt;
+    background-color: #1a4c92;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Biar ngestick ke atas */
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+.content {
+    margin-top: 5%;
+}
+
+
+#header-logo-container {
+    
+    margin-left: 5px;
+   
+}
+
+#header-logo {
+    
+    height: 70px;
+    align-items: center;
+}
+
+#header-nav {
+    width: 60%;
+    margin-left: 20px;
+    align-items: center;
+    display: flex;
+    
+}
+
+#header-register {
+    width: 20%;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    padding-left: 200px;
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:hover {
+    background-color: #0fa2ff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-item:active {
+    background-color: #2d77ff;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-menu {
+    position: absolute;
+    display: none;
+    margin-left: -17px;
+    margin-top: 10px;
+    background-color: #282a35;
+    align-items: flex-start;
+    transition: 0,2s;
+       
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:active {
+    background-color: #0fa2ff;
+}
+
+.dropdown-item {
+   padding: 10px; 
+
+}
+
+.dropdown-item:hover {
+    background-color: #0fa2ff;
+    border-radius: 10px;
+}
+
+.dropdown-item:active {
+    background-color: #2d77ff;
+    border-radius: 10px;
+}
+
+.RegisterButton {
+    background-color: #0fa2ff;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+}
+
+.RegisterButton:hover {
+    background-color: #0f59e4;
+}
+
+.RegisterButton:active {
+    background-color: #2d77ff;
+}
+
+.header-toggle {
+    display: none;
+    position: absolute;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        font-size: 14pt;
+        height: 70px;
+    }
+
+    .header-toggle {
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        display: flex;
+    }
+
+    #header-nav {
+        background-color: #282a35;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+
+    #header-logo-container {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-logo {
+        height: 65px;
+    }
+
+    .dropdown:active .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 30px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dropdown-item {
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+
+    #header-register {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        display: flex;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-top: 10%;
+    }
+}
+
+
+
+.footer {
+    background-color: #1a4c92;
+    height: 80px;
+    padding-top: 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    display: flex;
+    margin-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}

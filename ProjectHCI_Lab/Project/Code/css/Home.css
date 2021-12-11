@@ -1,0 +1,291 @@
+
+.slideshow {
+    background-color:black;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.slideShow{
+    width: 80vw;
+
+}
+
+.content{
+    margin-top: 1%;
+}
+
+.upper-content {
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+   
+}
+
+
+
+.text-title1 {
+    color: #ff7200;
+   justify-content: center;
+    text-align: center;
+    font-size: 15pt;
+    
+}
+
+
+.upper-content .text-content1 {
+    font-size: larger;
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    
+    
+}
+
+.mid-content{
+display : flex;
+justify-content: space-evenly;
+padding-top: 5%;
+align-items: center;
+
+}
+
+.text-title2 {
+    color: #1a4c92;
+   justify-content: center;
+    text-align: center;
+    font-size: 15pt;
+   
+}
+
+.mid-content .text-content2{
+    text-align: justify;
+    font-size: larger;
+    width: 600px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.lower-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+.picture-content3{
+    justify-content: center;
+}
+
+#advantages {
+    background-color: white;
+}
+
+.footer .icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 200px;
+}
+
+.footer .icons img {
+    width: 24px;
+    transition: 0.2s;
+}
+
+.footer .icons img:hover {
+    opacity: 1;
+}
+
+.slideshowbody{
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    padding-top: 1pt;
+ 
+}
+
+
+.slideshowcontent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3vw;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.button{
+    background-color: Transparent;
+    border: none;     
+    outline: none;
+    cursor:pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.button>img:hover{
+    transition: 0.3s;
+    width: 7vw;
+}
+
+.button>img{
+    transition: 0.3s;
+    width: 6vw;
+}
+
+#prevBtn{
+    left:1.5vw;
+}
+
+#nextBtn{
+    right:1.5vw;
+}
+
+
+.slideshowcontainer{
+    display: flex;
+    justify-content: space-between;
+    transition: all 650ms ease-in-out;
+    position: relative;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 80vw;
+    object-fit: cover;
+    align-items: center;
+}
+
+.slide>.imgslideshow>img{
+    /* margin-top: ; */
+    width: 60vw;
+    object-fit: cover;
+    border-radius: 1vw;
+
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    font-size: 14pt;
+    height: 70px;
+    z-index: 999999999;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        font-size: 14pt;
+        height: 70px;
+    }
+
+    .header-toggle {
+        position: absolute;
+        top: 15px;
+        left: 5px;
+        display: flex;
+    }
+
+    #header-nav {
+        background-color: #282a35;
+        width: 100%;
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-item {
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+
+    #header-logo-container {
+        padding-top: 1pt;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    #header-logo {
+        height: 65px;
+    }
+
+    .dropdown:active .dropdown-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        top: 30px;
+        justify-content: center;
+        width: 100%;
+        
+        z-index: 3;
+    }
+
+    .dropdown-item {
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       padding-top: 10px;
+       padding-bottom: 10px;
+    }
+
+    #header-register {
+        position: absolute;
+        top: 30px;
+        right: 70px;
+        display: flex;
+    }
+
+    .content {
+        margin-top: 30%;
+    }
+
+    .content .upper-content{
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .content .mid-content{
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+    
+    .slide>.imgslideshow>img{
+        width: 26vw;
+        object-fit: cover;
+        border-radius: 1vw;
+    }
+}
+
+
+
+
+
+

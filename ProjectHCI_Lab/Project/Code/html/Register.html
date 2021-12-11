@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../Asset/Home/logo.png" type="image/x-icon">
+    <title>Welcome to Frawsalla </title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../Asset/Home/logo.png" type="image/x-icon">  
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/Home.css">
+    <link rel="stylesheet" href="../css/HeaderFooter.css">
+    <link rel="stylesheet" href="../css/character.css">
+    <link rel="stylesheet" href="../html/event.html">
+    <link rel="stylesheet" href="../html/screenshot.html">
+    <link rel="stylesheet" href="../css/Register.css">
+    <script src="../js/RegisterValidation.js"></script>
+
+<body>
+    <header class="header" id="header"> 
+        <div class="header-toggle" onclick="toggleNavbar();">
+            <svg viewBox="0 0 100 80" width="40" height="40" fill="white">
+                <rect width="100" height="10" />
+                <rect y="30" width="100" height="10" />
+                <rect y="60" width="100" height="10" />
+            </svg>
+        </div>   
+
+        <div id="header-logo-container">
+            <div>
+                <img id="header-logo" src="../Asset/Home/logo.png" alt="Logotype">
+            </div>
+        </div>
+
+        <div id="header-nav">
+            <div class="navigation">
+                <div class="nav-item">
+                    <a href="home.html">HOME</a>
+                </div>
+                <div class="nav-item">
+                    <a href="event.html"> EVENT</a>
+                </div>
+                <div class="dropdown nav-item">
+                    <a>GAME INFO</a>
+
+                    <div class="dropdown-menu">
+                        <a href="character.html" class="dropdown-item">CHARACTER</a>
+                        <a href="screenshot.html" class="dropdown-item">SCREENSHOT</a>
+                    </div>
+                </div> 
+            </div>
+    
+            <div id="header-register">
+                <div>
+                    <a href="register.html" class="RegisterButton"> PLAY NOW</a>
+                </div>
+            </div> 
+
+            </div>
+        </div>
+
+    </header>
+
+    <div class="content">
+        <div class="container">
+            
+            <div class="form-container" id="regform-input-container">
+                <div class="form-title">
+                    <h1>SIGN UP</h1>
+                </div>
+
+                <form id="form" action="../HTML/Register.html" method="GET">
+                    <div class="form-group">
+                        <div class="column-label">
+                            <label id="lbl-name">Name</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="text" id="txt-name" name="name" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="error-name"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="column-label">
+                            <label id="lbl-gender">Gender</label>
+                        </div>
+                        <div class="column-form" id="gender-form">
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-male" name="gender" value="male">
+                                <label for="rb-gender-male">Male</label>
+                            </div>
+
+                            <div class="gender-container">
+                                <input type="radio" id="rb-gender-female" name="gender" value="female">
+                                <label for="rb-gender-female">Female</label>
+                            </div>
+
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="error-gender"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="column-label">
+                            <label id="lbl-email">Email Address</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="text" id="txt-email" name="email" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="error-email"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="column-label">
+                            <label id="lbl-password">Password</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="password" id="txt-password" name="password" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="error-password"></label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="column-label">
+                            <label id="lbl-confirm-password">Confirm Your Password</label>
+                        </div>
+                        <div class="column-form">
+                            <input type="password" id="txt-confirm-password" name="confPassword" placeholder="">
+                        </div>
+                        <div class="column-error">
+                            <label class="lbl-error" id="error-confirm-password"></label>
+                        </div>
+                    </div>
+
+                    <div class="term-condition-container">
+                        <div class="checkbox-term-condition" id="cb-term-condition-container">
+                            <input type="checkbox" id="cb-term-condition" name="termCondition"
+                                value="agreeTermCondition" >
+                        </div>
+                        <div class="label-term-condition">
+                            <label class="lbl-term-condition" id="lbl-tc" for="cb-term-condition">Agree with terms and
+                                conditions </label>
+                        </div>
+                    </div>
+
+                    <div class="submit-button-container">
+                        <input type="submit" name="btnSubmit" class="btn-submit" value="SIGN UP">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+
+        <div class="copyright">
+            <p>© 2021 Frawlsalla, All Rights Reserved.</p>
+        </div>
+
+        <div class="icons">
+            <a href="https://www.instagram.com/brawlhalla/" target="_blank"><img id="img-instagram"
+                    src="../Asset/headerfooter/instagram.png"></a>
+            <a href="https://www.twitter.com/brawhala/" target="_blank"><img id="img-twitter"
+                    src="../Asset/headerfooter/twitter.png"></a>
+            <a href="https://facebook.com/brawhalla/" target="_blank"><img id="img-facebook"
+                    src="../Asset/headerfooter/facebook.png"></a>
+        </div>
+
+    </div>
+
+</body>
